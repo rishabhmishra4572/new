@@ -17,6 +17,12 @@ class Calculator:
             return "Error: Cannot divide by zero."
         return a / b
 
+    def square(self, a, b = None):
+        if a != 0:
+            return a * a
+        else:
+            return 0
+
 # Example usage:
 if __name__ == "__main__":
     calc = Calculator()
@@ -26,3 +32,4 @@ if __name__ == "__main__":
     print("Multiplication (10 * 5):", calc.multiply(10, 5))
     print("Division (10 / 5):", calc.divide(10, 5))
     print("Division by zero (10 / 0):", calc.divide(10, 0))
+    print("Square: ", calc.square(5))
